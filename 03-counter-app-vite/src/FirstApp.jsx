@@ -9,8 +9,9 @@ const getMessage = ()=>{
 export const FirstApp = () => {
   return (
     <>
-        <div>FirstApp</div>
-        <code>{JSON.stringify(getMessage())}</code>
+        <h1>FirstApp</h1>
+        {/* <code>{JSON.stringify(getMessage())}</code> */}
+        <p>Soy un subtitulo</p>
     </>
     
   )
