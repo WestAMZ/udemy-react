@@ -9,7 +9,6 @@ import './styles.css'
 ReactDOM.createRoot(document.getElementById('root'))
 .render(
     <React.StrictMode>
-        {/* <HellWorldApp /> */}
-        <FirstApp title="Texto titulo" subtitle={ 123 }/>
+        <FirstApp title="Titulo encabezado" subTitle={789} />
     </React.StrictMode>
 );
