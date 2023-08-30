@@ -9,6 +9,6 @@ import './styles.css'
 ReactDOM.createRoot(document.getElementById('root'))
 .render(
     <React.StrictMode>
-        <FirstApp title="Titulo encabezado" subTitle={789} />
+        <FirstApp />
     </React.StrictMode>
 );
