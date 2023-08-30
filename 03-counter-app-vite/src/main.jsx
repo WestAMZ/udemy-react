@@ -10,6 +10,6 @@ ReactDOM.createRoot(document.getElementById('root'))
 .render(
     <React.StrictMode>
         {/* <HellWorldApp /> */}
-        <FirstApp />
+        <FirstApp title="Texto titulo" subtitle={ 123 }/>
     </React.StrictMode>
 );
