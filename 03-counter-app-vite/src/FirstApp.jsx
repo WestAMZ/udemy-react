@@ -5,7 +5,8 @@ export const FirstApp = ( { title, subTitle, name }) => {
 
   return (
     <>
-        <h1>{title}</h1>
+        <h1 data-testid="test-title">{title}</h1>
+        <p>{subTitle}</p>
         <p>{subTitle}</p>
         <p>{name}</p>
     </>
@@ -22,7 +23,7 @@ FirstApp.propTypes = {
 // si no se pasó un valor pero se definió en defaultProps
 // no tendremos error de propTypes
 FirstApp.defaultProps = {
-    title: 'No hay titulo',
+    //title: 'No hay titulo',
     name: 'Fernando Herrera',
     subTitle: 'No hay subtitulo'
 }
