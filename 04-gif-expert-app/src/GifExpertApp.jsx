@@ -1,26 +1,30 @@
-import { useState } from "react"
-import { AddCategory } from "./components/AddCategory"
+import { useState } from "react";
+import { AddCategory } from "./components/AddCategory";
+import { GifGrid } from "./components/GifGrid";
 
 // luego de versión 17 de react no es necesario hacer la importación de Reac from ...
 export const GifExpertApp = () =>{
 
-    const [categories, setcategories] = useState(['One Punch', 'Dragon Ball'])
-    console.log(categories)
-    const onAddCategory = () => {
-        const newCategory = 'Otra categoría'
+    const [categories, setcategories] = useState(['One Punch'])
+
+    const onAddCategory = (newCategory) => {
+        if(categories.includes(newCategory)) return;
+
         setcategories( prevCategories =>[ newCategory, ...prevCategories ] );
     }
 
     return (
         <>
             <h1>GIfExpertApp</h1>
-            <AddCategory setcategories={setcategories} />
-            <button onClick={onAddCategory}>Agregar</button>
-            <ol>
-                { 
-                    categories.map(category=> (<li key={category} >{category}</li>))
-                }
-            </ol>
+            <AddCategory 
+                onNewCategory={ (value) => onAddCategory(value) }
+            />
+
+            { 
+                categories.map(category => (
+                    <GifGrid key={category} category={category} />
+                ))
+            }
         </>
     )
 }
