@@ -1,6 +1,5 @@
 import { useState } from "react";
-import { AddCategory } from "./components/AddCategory";
-import { GifGrid } from "./components/GifGrid";
+import { AddCategory, GifGrid } from "./components";
 
 // luego de versión 17 de react no es necesario hacer la importación de Reac from ...
 export const GifExpertApp = () =>{
