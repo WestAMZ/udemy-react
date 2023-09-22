@@ -1,0 +1,17 @@
+import { render, screen } from "@testing-library/react";
+import { GifGrid } from "../../src/components/GifGrid";
+
+describe('Pruebas en <GifGrid />', ()=>{
+
+    const category = 'One Punch';
+    test('debe de mostrar el loading inicialmente', ()=>{
+
+        render( <GifGrid category={ category } /> ) 
+        expect( screen.getByText('Cargando...') ).toBeTruthy();
+        expect( screen.getByText(category) ).toBeTruthy();
+    });
+
+    test('debe de mostrar items cuando se cagan las imagenes', ()=>{
+
+    });
+})
