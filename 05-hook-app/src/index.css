@@ -5,3 +5,47 @@ body {
 button{
     margin-right: 10px;
 }
+
+.bg-normal{
+    background-color: rgb(160, 160, 160);
+}
+
+.bg-fire{
+    background-color: rgb(226, 26, 0);
+}
+
+.bg-water{
+    background-color: rgb(29, 107, 252);
+}
+
+.bg-grass{
+    background-color: rgb(0, 216, 47);
+}
+
+.bg-poison{
+    background-color: rgb(109, 0, 136);
+}
+
+.bg-bug{
+    background-color: rgb(105, 136, 64);
+}
+
+.bg-flying{
+    background-color: rgb(185, 124, 255);
+}
+
+.bg-ground{
+    background-color: rgb(148, 150, 64);
+}
+
+.bg-fairy{
+    background-color: rgb(204, 135, 198);
+}
+
+.bg-fighting{
+    background-color: rgb(238, 88, 2);
+}
+
+.bg-psychic{
+    background-color: rgb(255, 68, 239);
+}
