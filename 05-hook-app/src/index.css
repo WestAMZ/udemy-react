@@ -49,3 +49,8 @@ button{
 .bg-psychic{
     background-color: rgb(255, 68, 239);
 }
+
+.bg-electric{
+    background-color: rgb(251, 255, 0);
+    color: black;
+}
