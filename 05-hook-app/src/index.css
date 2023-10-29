@@ -54,3 +54,7 @@ button{
     background-color: rgb(251, 255, 0);
     color: black;
 }
+
+a{
+    margin-right: 5px;
+}

@@ -22,6 +22,9 @@ export const TodoAdd = ({ onNewTodo }) => {
     const onFormSubmit = (event) =>{
         event.preventDefault();
 
+        if( description.length === 0 )
+            return;
+
         const newTodo = {
             id: new Date().getTime() * 3,
             description,
@@ -43,6 +46,7 @@ export const TodoAdd = ({ onNewTodo }) => {
             value={ description }
             onChange={ onInputChange }
             name="description"
+            required
         />
         <button className="btn btn-outline-primary mt-2" type="submit">
             Agregar
